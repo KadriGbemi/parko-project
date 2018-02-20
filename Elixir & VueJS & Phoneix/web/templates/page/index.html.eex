@@ -1,0 +1,7 @@
+<div id="parko-app">
+  <router-view></router-view>
+</div>
+
+
+        
+    

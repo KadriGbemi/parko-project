@@ -1,0 +1,6 @@
+<h2>New point</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: point_path(@conn, :create) %>
+
+<span><%= link "Back", to: point_path(@conn, :index) %></span>

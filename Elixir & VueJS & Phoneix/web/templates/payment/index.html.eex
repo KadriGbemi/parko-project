@@ -1,0 +1,36 @@
+<h2>Listing payments</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Booking</th>
+      <th>Start time</th>
+      <th>End time</th>
+      <th>Amount</th>
+      <th>Payment date</th>
+      <th>Due date</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for payment <- @payments do %>
+    <tr>
+      <td><%= payment.booking_id %></td>
+      <td><%= payment.start_time %></td>
+      <td><%= payment.end_time %></td>
+      <td><%= payment.amount %></td>
+      <td><%= payment.payment_date %></td>
+      <td><%= payment.due_date %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: payment_path(@conn, :show, payment), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: payment_path(@conn, :edit, payment), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: payment_path(@conn, :delete, payment), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New payment", to: payment_path(@conn, :new) %></span>

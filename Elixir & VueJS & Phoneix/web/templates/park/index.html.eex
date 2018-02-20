@@ -1,0 +1,38 @@
+<h2>Listing parks</h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Address</th>
+      <th>Zone</th>
+      <th>Lat</th>
+      <th>Lng</th>
+      <th>Is road</th>
+      <th>Available space</th>
+      <th>Total space</th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for park <- @parks do %>
+    <tr>
+      <td><%= park.address %></td>
+      <td><%= park.zone %></td>
+      <td><%= park.lat %></td>
+      <td><%= park.lng %></td>
+      <td><%= park.is_road %></td>
+      <td><%= park.available_space %></td>
+      <td><%= park.total_space %></td>
+
+      <td class="text-right">
+        <span><%= link "Show", to: park_path(@conn, :show, park), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Edit", to: park_path(@conn, :edit, park), class: "btn btn-default btn-xs" %></span>
+        <span><%= link "Delete", to: park_path(@conn, :delete, park), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<span><%= link "New park", to: park_path(@conn, :new) %></span>

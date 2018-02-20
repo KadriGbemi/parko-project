@@ -1,0 +1,6 @@
+<h2>Edit park</h2>
+
+<%= render "form.html", changeset: @changeset,
+                        action: park_path(@conn, :update, @park) %>
+
+<span><%= link "Back", to: park_path(@conn, :index) %></span>

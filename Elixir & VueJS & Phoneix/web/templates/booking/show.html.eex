@@ -1,0 +1,33 @@
+<h2>Show booking</h2>
+
+<ul>
+
+  <li>
+    <strong>User:</strong>
+    <%= @booking.user_id %>
+  </li>
+
+  <li>
+    <strong>Park:</strong>
+    <%= @booking.park_id %>
+  </li>
+
+  <li>
+    <strong>Payment method:</strong>
+    <%= @booking.payment_method %>
+  </li>
+
+  <li>
+    <strong>Start time:</strong>
+    <%= @booking.start_time %>
+  </li>
+
+  <li>
+    <strong>End time:</strong>
+    <%= @booking.end_time %>
+  </li>
+
+</ul>
+
+<!--<span><%= link "Edit", to: booking_path(@conn, :edit, @booking) %></span>-->
+<span><%= link "Back", to: booking_path(@conn, :index) %></span>

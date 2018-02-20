@@ -1,0 +1,23 @@
+<h2>Show point</h2>
+
+<ul>
+
+  <li>
+    <strong>Park:</strong>
+    <%= @point.park_id %>
+  </li>
+
+  <li>
+    <strong>Lat:</strong>
+    <%= @point.lat %>
+  </li>
+
+  <li>
+    <strong>Lng:</strong>
+    <%= @point.lng %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: point_path(@conn, :edit, @point) %></span>
+<span><%= link "Back", to: point_path(@conn, :index) %></span>

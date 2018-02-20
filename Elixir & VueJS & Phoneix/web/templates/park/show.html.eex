@@ -1,0 +1,43 @@
+<h2>Show park</h2>
+
+<ul>
+
+  <li>
+    <strong>Address:</strong>
+    <%= @park.address %>
+  </li>
+
+  <li>
+    <strong>Zone:</strong>
+    <%= @park.zone %>
+  </li>
+
+  <li>
+    <strong>Lat:</strong>
+    <%= @park.lat %>
+  </li>
+
+  <li>
+    <strong>Lng:</strong>
+    <%= @park.lng %>
+  </li>
+
+  <li>
+    <strong>Is road:</strong>
+    <%= @park.is_road %>
+  </li>
+
+  <li>
+    <strong>Available space:</strong>
+    <%= @park.available_space %>
+  </li>
+
+  <li>
+    <strong>Total space:</strong>
+    <%= @park.total_space %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: park_path(@conn, :edit, @park) %></span>
+<span><%= link "Back", to: park_path(@conn, :index) %></span>

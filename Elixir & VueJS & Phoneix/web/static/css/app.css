@@ -1,0 +1,365 @@
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: rgb(34, 28, 28);
+  }
+     
+  @media (min-width: 100%) {
+    .container {
+      max-width: 50%;
+    }
+  }
+  .container-narrow > hr {
+    margin: 0px 0px;
+  }
+
+  #customers {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100px;
+}
+
+#tableprice td, #tableprice th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tableprice tr:nth-child(even){background-color: #f2f2f2;}
+
+#tableprice tr:hover {background-color: #ddd;}
+
+#tableprice th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgba(198, 240, 149, 0.719);
+    color: rgb(65, 63, 63);
+   
+}
+
+.jumbotron {
+    margin-top: 0px;
+    text-decoration-color: rgb(226, 217, 217); 
+    background-position: center;
+    background-image: no-repeat;
+    background-image: url("/images/jumbo-back.jpg") 
+}
+.coloring {
+
+    color: rgb(226, 217, 217); 
+    
+}
+.form-gro{
+    width: 350px;
+    box-sizing: border-box;
+    border: 2px solid rgb(240, 238, 238);
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: rgb(238, 238, 238);
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.form-gro[type=text]:focus {
+    width: 50%;
+}
+
+.form-booking {
+    background-color: royalblue;
+}
+.btn {
+
+    border: none;
+    color: white;
+    
+    font-size:16px;
+    cursor: pointer;
+}
+
+.danger {background-color: #d44338;
+              
+} 
+.danger:hover {
+    background: #8f6360;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.form-booking {
+    
+        color: #000000;
+    
+    }
+.carousel-inner img {
+    width: 100%; /* Set width to 100% */
+    margin: auto;
+    min-height:200px;
+}
+
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none; 
+  }
+}
+
+@media (min-width: 768px) {
+    .contain {
+      max-width: 100%;
+      padding: 0.5% 5% 3% 5%;
+    }
+  }
+
+
+.actiontwo {
+    width: 100%;
+    background-color: #d44338;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.actiontwo:hover {
+    background-color: #cf443a;
+}
+
+.action{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding:15px;
+}
+
+.row {
+
+    height: 200px
+}
+
+.styling {
+    
+       margin-top: 20px;
+       background-color: #dfdfdf;
+       text-decoration-color: #8f6360;
+    }
+
+.stylingform{
+        background-color: #dfdfdf;
+        margin-bottom: 20px;
+        }
+
+@media (max-height: 768px) {
+    footer {
+                background-color: #fad7d7;
+                background-blend-mode: luminosity;
+                padding: 25px;
+                margin-top: 10px;
+            }
+    }
+
+ .parkingresult{
+
+    position: center;
+    width: 10%;
+
+ }   
+  #map {
+    height: 100%;
+  }
+  /* Optional: Makes the sample page fill the window. */
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  
+.searchbutton{
+   
+    box-shadow: rebeccapurple;
+    position: absolute;
+    margin-left: 90%;
+
+    
+}
+
+.imgstyle {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.imagestyle {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.form-control{
+    
+    position: relative;
+  
+}
+
+@media (max-width: 270px) {
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ddd;
+    display: block !important;
+    
+}
+}
+
+
+th, td {
+    text-align: left;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2
+}
+
+  h3 { 
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+
+.signupbtn {
+    padding: 14px 20px;
+    
+}
+
+.cancelbtn{
+
+    padding: 14px 20px;
+}
+
+.loginbtn {
+    padding: 14px 20px;
+    background-color: #80c977;
+}
+
+
+.signupbtn,.loginbtn {
+    float: left;
+    width: 50%;
+}
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+@media screen and (max-width: 300px) {
+    .signupbtn, .loginbtn {
+       width: 100%;
+    }
+}      
+
+.invoice-box {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    font-size: 14px;
+    line-height: 24px;
+    font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+    color: #555;
+}
+
+.invoice-box table {
+    width: 100%;
+    line-height: inherit;
+    text-align: left;
+}
+
+.invoice-box table td {
+    padding: 5px;
+    vertical-align: top;
+}
+
+.invoice-box table tr td:nth-child(2) {
+    text-align: right;
+}
+
+.invoice-box table tr.top table td {
+    padding-bottom: 20px;
+}
+
+.invoice-box table tr.top table td.title {
+    font-size: 30px;
+    line-height: 45px;
+    color: #333;
+}
+
+.invoice-box table tr.information table td {
+    padding-bottom: 40px;
+}
+
+.invoice-box table tr.heading td {
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+
+.invoice-box table tr.details td {
+    padding-bottom: 20px;
+}
+
+.invoice-box table tr.item td{
+    border-bottom: 1px solid #eee;
+}
+
+.invoice-box table tr.item.last td {
+    border-bottom: none;
+}
+
+.invoice-box table tr.total td:nth-child(2) {
+    border-top: 2px solid #eee;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .invoice-box table tr.top table td {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    
+    .invoice-box table tr.information table td {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}
+
+/** RTL **/
+.rtl {
+    direction: rtl;
+    font-family: Tahoma, 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+}
+
+.rtl table {
+    text-align: right;
+}
+
+.rtl table tr td:nth-child(2) {
+    text-align: left;
+}
+                 
